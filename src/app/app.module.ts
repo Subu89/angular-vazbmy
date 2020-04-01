@@ -19,10 +19,12 @@ import { RxjsExampleComponent } from './rxjs-example/rxjs-example.component';
 import { FormAppComponent } from './form-app/form-app.component';
 import { PipeBuiltinsComponent } from './pipe-builtins/pipe-builtins.component';
 import { AsyncPipeComponent } from './async-pipe/async-pipe.component';
+import { DefaultImaagePipe } from './default-imaage.pipe';
+import { ModelFormComponent } from './model-form/model-form.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, ReactiveFormsModule ],
-  declarations: [ AppComponent, HelloComponent, NgforExampleComponent, NgforGroupedExampleComponent, NgifExampleComponent, NgSwitchExampleComponent, NgstyleExampleComponent, NgclassExampleComponent, NgnonbindableExampleComponent, RecentArticlesComponent, CardhoverDirective, JokeComponent, JokeListComponent, RxjsExampleComponent, FormAppComponent, PipeBuiltinsComponent, AsyncPipeComponent ],
+  declarations: [ AppComponent, HelloComponent, NgforExampleComponent, NgforGroupedExampleComponent, NgifExampleComponent, NgSwitchExampleComponent, NgstyleExampleComponent, NgclassExampleComponent, NgnonbindableExampleComponent, RecentArticlesComponent, CardhoverDirective, JokeComponent, JokeListComponent, RxjsExampleComponent, FormAppComponent, PipeBuiltinsComponent, AsyncPipeComponent, DefaultImaagePipe, ModelFormComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
