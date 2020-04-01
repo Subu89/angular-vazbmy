@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -23,10 +24,11 @@ import { DefaultImaagePipe } from './default-imaage.pipe';
 import { ModelFormComponent } from './model-form/model-form.component';
 import { ReactiveModelFormComponent } from './reactive-model-form/reactive-model-form.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
+import { HttpExampleComponent } from './http-example/http-example.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, ReactiveFormsModule ],
-  declarations: [ AppComponent, HelloComponent, NgforExampleComponent, NgforGroupedExampleComponent, NgifExampleComponent, NgSwitchExampleComponent, NgstyleExampleComponent, NgclassExampleComponent, NgnonbindableExampleComponent, RecentArticlesComponent, CardhoverDirective, JokeComponent, JokeListComponent, RxjsExampleComponent, FormAppComponent, PipeBuiltinsComponent, AsyncPipeComponent, DefaultImaagePipe, ModelFormComponent, ReactiveModelFormComponent, TemplateFormComponent ],
+  imports:      [ BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule ],
+  declarations: [ AppComponent, HelloComponent, NgforExampleComponent, NgforGroupedExampleComponent, NgifExampleComponent, NgSwitchExampleComponent, NgstyleExampleComponent, NgclassExampleComponent, NgnonbindableExampleComponent, RecentArticlesComponent, CardhoverDirective, JokeComponent, JokeListComponent, RxjsExampleComponent, FormAppComponent, PipeBuiltinsComponent, AsyncPipeComponent, DefaultImaagePipe, ModelFormComponent, ReactiveModelFormComponent, TemplateFormComponent, HttpExampleComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
