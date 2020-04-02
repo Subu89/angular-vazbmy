@@ -25,10 +25,12 @@ import { ModelFormComponent } from './model-form/model-form.component';
 import { ReactiveModelFormComponent } from './reactive-model-form/reactive-model-form.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { HttpExampleComponent } from './http-example/http-example.component';
+import { SearchService } from './search.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule ],
   declarations: [ AppComponent, HelloComponent, NgforExampleComponent, NgforGroupedExampleComponent, NgifExampleComponent, NgSwitchExampleComponent, NgstyleExampleComponent, NgclassExampleComponent, NgnonbindableExampleComponent, RecentArticlesComponent, CardhoverDirective, JokeComponent, JokeListComponent, RxjsExampleComponent, FormAppComponent, PipeBuiltinsComponent, AsyncPipeComponent, DefaultImaagePipe, ModelFormComponent, ReactiveModelFormComponent, TemplateFormComponent, HttpExampleComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [SearchService]
 })
 export class AppModule { }
